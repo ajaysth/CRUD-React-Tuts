@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 interface User {
@@ -42,6 +43,8 @@ const Users = () => {
             if (!response.ok) {
                 throw new Error("Failed to delete user");
             }
+            toast.success("User deleted successfully");
+            navigate('/users');
         } catch (e) {
             console.error(e);
         } finally {

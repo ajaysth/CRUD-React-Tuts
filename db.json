@@ -1,16 +1,16 @@
 {
   "users": [
     {
-      "name": "Vijayiipppppppppppp",
+      "name": "Vijayiippppppppllp",
       "email": "vijay@example.com",
       "role": "user",
       "id": 2
     },
     {
-      "id": 3,
-      "name": "Sanjay",
+      "name": "Sanjaylll",
       "email": "sanjay@example.com",
-      "role": "user"
+      "role": "user",
+      "id": 3
     },
     {
       "name": "Test",
@@ -19,22 +19,16 @@
       "id": 4
     },
     {
-      "name": "ajjj",
-      "email": "fffffff",
-      "role": "llll",
-      "id": 7
-    },
-    {
-      "name": "jjj",
-      "email": "llll@gmail.com",
-      "role": "ooop",
-      "id": 8
-    },
-    {
       "name": "Sapiente placeat id",
       "email": "oo@w.com",
       "role": "Est ea laboris earum",
       "id": 9
+    },
+    {
+      "name": "sofi",
+      "email": "sofi@gmail.com",
+      "role": "queen",
+      "id": 10
     }
   ],
   "posts": [

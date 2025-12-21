@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { toast } from "react-hot-toast";
+import { useNavigate, useParams } from "react-router-dom";
 
 const UserEdit = () => {
     const { id } = useParams<{ id: string }>();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [role, setRole] = useState('');
-    const [error, setError] = useState('');
 
+    const navigate = useNavigate();
     useEffect(() => {
         const fetchUser = async () => {
             try {
@@ -29,11 +30,11 @@ const UserEdit = () => {
 
     const UpdateUser = async () => {
         if (!name || !email || !role) {
-            setError("All fields are required");
+            toast.error("All fields are required");
             return;
         }
         if (!email.includes('@')) {
-            setError("Invalid email address");
+            toast.error("Invalid email address");
             return;
         }
 
@@ -49,8 +50,12 @@ const UserEdit = () => {
             }
 
             const data = await response.json()
+            toast.success("User updated successfully");
+            setName('');
+            setEmail('');
+            setRole('');
+            navigate('/users');
             console.log(data);
-            setError('');
         } catch (e) {
             console.error(e);
         }
@@ -58,14 +63,15 @@ const UserEdit = () => {
 
     return (
         <>
-            <div className="text-cen">
-                <h1 className="text-3xl text-center mt-5">Please add users.</h1>
-                {error && <p className="text-red-500">{error}</p>}
-                <div className="flex flex-col gap-3 max-w-md mx-auto mt-10">
-                    <input type="text" onChange={(e) => { setName(e.target.value) }} value={name} placeholder="Enter Name" /> <p>{name}</p>
-                    <input type="text" onChange={(e) => { setEmail(e.target.value) }} value={email} placeholder="Enter Email" />
-                    <input type="text" onChange={(e) => { setRole(e.target.value) }} value={role} placeholder="Enter Role" />
-                    <button onClick={UpdateUser}>Update User</button>
+            <div className=" min-h-screen flex flex-col items-center justify-start bg-gray-100 py-10">
+                <h1 className="text-3xl font-bold text-center mb-8">Please Edit users.</h1>
+                <div className="bg-white shadow-lg rounded-xl p-8 w-full max-w-md">
+                    <div className="flex flex-col gap-4">
+                        <input type="text" onChange={(e) => { setName(e.target.value) }} value={name} placeholder="Enter Name" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-300 transition" /> <p>{name}</p>
+                        <input type="text" onChange={(e) => { setEmail(e.target.value) }} value={email} placeholder="Enter Email" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-300 transition" />
+                        <input type="text" onChange={(e) => { setRole(e.target.value) }} value={role} placeholder="Enter Role" className="border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-emerald-300 transition" />
+                        <button onClick={UpdateUser} className="bg-emerald-500 text-white font-semibold rounded-lg py-3 mt-2 hover:bg-emerald-600 transition-colors duration-200">Update User</button>
+                    </div>
                 </div>
             </div>
         </>
