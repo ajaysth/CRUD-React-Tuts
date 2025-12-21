@@ -1,10 +1,57 @@
 {
   "users": [
-    { "id": 1, "name": "Ajay", "email": "ajay@example.com", "role": "admin" },
-    { "id": 2, "name": "Vijay", "email": "vijay@example.com", "role": "user" },
-    { "id": 3, "name": "Sanjay", "email": "sanjay@example.com", "role": "user" }
+    {
+      "id": 1,
+      "name": "Ajay",
+      "email": "ajay@example.com",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Vijay",
+      "email": "vijay@example.com",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Sanjay",
+      "email": "sanjay@example.com",
+      "role": "user"
+    },
+    {
+      "name": "Test",
+      "email": "text@kk.com",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "name": "Qui qui rerum deseru",
+      "email": "Fugiat doloribus fug",
+      "role": "Recusandae In lauda",
+      "id": 6
+    },
+    {
+      "name": "ajjj",
+      "email": "fffffff",
+      "role": "llll",
+      "id": 7
+    },
+    {
+      "name": "jjj",
+      "email": "llll@gmail.com",
+      "role": "ooop",
+      "id": 8
+    },
+    {
+      "name": "jjj",
+      "email": "llll@gmail.com",
+      "role": "ooop",
+      "id": 9
+    }
   ],
-
   "posts": [
     {
       "id": 1,
@@ -19,21 +66,55 @@
       "body": "My first blog post"
     }
   ],
-
   "comments": [
-    { "id": 1, "postId": 1, "text": "Nice post!" },
-    { "id": 2, "postId": 1, "text": "Very helpful" },
-    { "id": 3, "postId": 2, "text": "Good one 👍" }
+    {
+      "id": 1,
+      "postId": 1,
+      "text": "Nice post!"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "text": "Very helpful"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "text": "Good one 👍"
+    }
   ],
-
   "products": [
-    { "id": 1, "name": "Laptop", "price": 60000, "stock": 10 },
-    { "id": 2, "name": "Mouse", "price": 500, "stock": 50 },
-    { "id": 3, "name": "Keyboard", "price": 1500, "stock": 30 }
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 60000,
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "name": "Mouse",
+      "price": 500,
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "name": "Keyboard",
+      "price": 1500,
+      "stock": 30
+    }
   ],
-
   "orders": [
-    { "id": 1, "userId": 2, "productId": 1, "quantity": 1 },
-    { "id": 2, "userId": 3, "productId": 2, "quantity": 2 }
+    {
+      "id": 1,
+      "userId": 2,
+      "productId": 1,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "productId": 2,
+      "quantity": 2
+    }
   ]
 }
