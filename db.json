@@ -1,16 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Ajay",
-      "email": "ajay@example.com",
-      "role": "admin"
-    },
-    {
-      "id": 2,
-      "name": "Vijay",
+      "name": "Vijayiipppppppppppp",
       "email": "vijay@example.com",
-      "role": "user"
+      "role": "user",
+      "id": 2
     },
     {
       "id": 3,
@@ -25,15 +19,6 @@
       "id": 4
     },
     {
-      "id": 5
-    },
-    {
-      "name": "Qui qui rerum deseru",
-      "email": "Fugiat doloribus fug",
-      "role": "Recusandae In lauda",
-      "id": 6
-    },
-    {
       "name": "ajjj",
       "email": "fffffff",
       "role": "llll",
@@ -46,19 +31,13 @@
       "id": 8
     },
     {
-      "name": "jjj",
-      "email": "llll@gmail.com",
-      "role": "ooop",
+      "name": "Sapiente placeat id",
+      "email": "oo@w.com",
+      "role": "Est ea laboris earum",
       "id": 9
     }
   ],
   "posts": [
-    {
-      "id": 1,
-      "userId": 1,
-      "title": "Welcome Post",
-      "body": "This is the first post"
-    },
     {
       "id": 2,
       "userId": 2,
@@ -67,16 +46,6 @@
     }
   ],
   "comments": [
-    {
-      "id": 1,
-      "postId": 1,
-      "text": "Nice post!"
-    },
-    {
-      "id": 2,
-      "postId": 1,
-      "text": "Very helpful"
-    },
     {
       "id": 3,
       "postId": 2,

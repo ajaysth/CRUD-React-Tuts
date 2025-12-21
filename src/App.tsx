@@ -1,6 +1,7 @@
 import { NavLink, Route, Routes } from "react-router-dom"
 import Users from "./pages/Users"
 import UserAdd from "./pages/UserAdd"
+import UserEdit from "./pages/UserEdit"
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<h2 className="text-2xl text-center mt-5">Welcome to Crud App</h2>} />
         <Route path="/users" element={<Users />} />
         <Route path="/useradd" element={<UserAdd />} />
+        <Route path="/users/edit/:id" element={<UserEdit />} />
       </Routes>
     </>
   )
