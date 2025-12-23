@@ -33,10 +33,40 @@
   ],
   "posts": [
     {
-      "id": 2,
+      "id": "2",
       "userId": 2,
       "title": "Hello World",
       "body": "My first blog post"
+    },
+    {
+      "id": "3",
+      "userId": 3,
+      "title": "Haitt",
+      "body": "Oh my zod"
+    },
+    {
+      "title": "hahaddd",
+      "body": "sdad",
+      "userId": 2,
+      "id": "Mu-fzjR"
+    },
+    {
+      "title": "Doloremque reprehend",
+      "body": "Alias debitis tempor",
+      "userId": 34,
+      "id": "QDV-k3W"
+    },
+    {
+      "title": "Sapiente ratione quo",
+      "body": "Dolor labore atque i",
+      "userId": 18,
+      "id": "G6qJzoW"
+    },
+    {
+      "title": "Excepturi rerum volu",
+      "body": "Atque consequatur cu",
+      "userId": 56,
+      "id": "pk5nx1q"
     }
   ],
   "comments": [

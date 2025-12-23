@@ -5,7 +5,8 @@ import UserEdit from "./pages/UserEdit"
 import { Toaster } from "react-hot-toast"
 import PostsLayout from "./components/PostsLayout"
 import Posts from "./components/Posts"
-import PostsLists from "./components/PostsLists"
+import PostsDetails from "./components/PostsDetails"
+import AddPosts from "./components/AddPosts"
 function App() {
 
   return (
@@ -29,7 +30,8 @@ function App() {
         <Route path="/users/edit/:id" element={<UserEdit />} />
         <Route path="/posts/*" element={<PostsLayout />} >
           <Route index element={<Posts />} />
-          <Route path="postslists" element={<PostsLists />} />
+          <Route path=":id" element={<PostsDetails />} />
+          <Route path="add-post" element={<AddPosts />} />
         </Route>
 
       </Routes>
