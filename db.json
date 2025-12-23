@@ -90,10 +90,10 @@
       "stock": 50
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Keyboard",
-      "price": 1500,
-      "stock": 30
+      "price": "1500",
+      "stock": "30"
     }
   ],
   "orders": [

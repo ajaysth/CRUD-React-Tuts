@@ -9,6 +9,7 @@ import PostsDetails from "./components/PostsDetails"
 import AddPosts from "./components/AddPosts"
 import ProductsLayout from "./components/products/ProductsLayout"
 import Products from "./components/products/Products"
+import ProductDetail from "./components/products/ProductDetail"
 function App() {
 
   return (
@@ -39,6 +40,7 @@ function App() {
 
         <Route path="/products/*" element={<ProductsLayout />}>
           <Route index element={<Products />} />
+          <Route path=":id" element={<ProductDetail />} />
         </Route>
 
       </Routes>
